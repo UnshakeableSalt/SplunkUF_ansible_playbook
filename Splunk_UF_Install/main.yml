@@ -1,0 +1,10 @@
+---
+- name: Install Linux Universal Forwarder
+  hosts: '{{ host }}'
+  vars:
+    splunk_working_directory: '/tmp/Splunk'
+    splunk_uf_file_64bit: 'splunkforwarder-8.2.0-e053ef3c985f-Linux-x86_64.tgz'
+    splunk_uf_file_arm: 'splunkforwarder-8.2.0-e053ef3c985f-Linux-armv8.tgz' 
+  roles:
+    - common
+...
